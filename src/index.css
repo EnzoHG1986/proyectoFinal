@@ -1,0 +1,64 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --color-principal: #F7F8FA;
+    --color-segundario: #c3cad9;
+    --color-terciario: #4D5E80;
+    --color-cuarto: #4A55A2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: var(--color-principal);
+}
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem;
+}
+.logoCel {
+    height: 3rem;
+}
+.logoFull {
+    display: none;
+}
+nav {
+    display: flex;
+    gap: 0.5rem
+}
+.bi {
+    color: var(--color-segundario);
+    font-size: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    header {
+        padding: 2.5rem;
+    }
+    .logoCel {
+        display: none;
+    }
+    .logoFull {
+        display: block;
+        height: 4rem;
+    }
+    
+}
+@media (min-width: 1440px) {
+    .bi {
+        font-size: 3rem;
+    }
+    
+}
