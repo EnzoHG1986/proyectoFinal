@@ -4,6 +4,14 @@ import { useCustomContext } from '../../ContextManager/ContextProvider'
 const Counter = ({initialValue, stock, id}) => {
     const {addProductCart } = useCustomContext()
     const [quantity, setQuantity] = useState(initialValue)
+    const onClickAddProduct = () =>{
+        addProductCart(id, quantity)
+        Swal.fire(
+            'Producto Agregado al Carrito',
+        )
+    }
+
+
     return (
     <>
         <div>
@@ -11,7 +19,7 @@ const Counter = ({initialValue, stock, id}) => {
             <span>{quantity}</span>
             <button onClick={() => setQuantity(quantity === stock ? quantity : quantity + 1)}>+</button>
         </div>
-            <button onClick={() =>addProductCart(id, quantity)}>Confirmar</button>
+            <button onClick={onClickAddProduct}>Confirmar</button>
         </>
 )
 }
