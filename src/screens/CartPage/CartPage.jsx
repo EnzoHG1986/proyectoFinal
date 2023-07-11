@@ -1,6 +1,6 @@
 import React from 'react'
 import { useCustomContext } from '../../ContextManager/ContextProvider'
-import { ProductCard } from '../../components'
+import { ProductCard, ProductCartCard } from '../../components'
 
 const CartPage = () => {
     const {cart} = useCustomContext()
@@ -9,7 +9,7 @@ const CartPage = () => {
         CartPage
         <div>
             {cart.map(product =>(
-                <ProductCard producto={product} key={product.id}/>
+                <ProductCartCard key={product.id} producto={product}/>
             ))}
         </div>
     </div>

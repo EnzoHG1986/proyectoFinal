@@ -41,6 +41,10 @@ nav {
     color: var(--color-segundario);
     font-size: 2rem;
 }
+.bi:hover{
+    color: var(--color-cuarto);
+
+}
 
 
 @media (min-width: 768px) {

@@ -1,2 +1,4 @@
 import ProductCard from "./ProductCard/ProductCard";
-export {ProductCard}
+import Counter from "./Counter/Counter";
+import ProductCartCard from "./ProductCartCard/ProductCartCard";
+export {ProductCard, Counter, ProductCartCard}
