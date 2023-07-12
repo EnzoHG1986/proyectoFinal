@@ -13,8 +13,9 @@ const [productIsInCart, setProductIsInCart] = useState(isInCart(id))
   
   return (
     <div>
+      <img src={productDetail.imagen} alt="" />
       <h1>{productDetail.nombre}</h1>
-      <h2>{productDetail.precio}</h2>
+      <h2>${productDetail.precio}</h2>
       <p>Descripcion: {productDetail.descripcion}</p>
       {
         isInCart(id)

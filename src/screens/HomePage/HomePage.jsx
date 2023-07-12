@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useCustomContext } from '../../ContextManager/ContextProvider'
 import { ProductCard } from '../../components'
+import './HomePage.css'
 
 const HomePage = () => {
     const {products} = useCustomContext()
@@ -15,20 +16,22 @@ const HomePage = () => {
         ))
     }, [searchProduct, min, max])
     return (
-        <div>
-
-            <input placeholder='Busca tu producto'value={searchProduct} onChange={(e) => setSearchProduct(e.target.value)}/>
-            <div>
-                <h2>Filtro por precio</h2>
+        <div className='containerHomePage'>
+            <div className='containerFiltro'>
+                <h4 className='fitroTitulo'>Filtra tu producto:</h4>
+                <input className='inputFiltro' placeholder='Busca tu producto'value={searchProduct} onChange={(e) => setSearchProduct(e.target.value)}/>
                 <div>
-                    <input type='text'value={min} onChange={(e) => setMin(Number(e.target.value))}/>
-                    <input type='text'value={max} onChange={(e) => setMax(Number(e.target.value))}/>
+                    <h4 className='fitroTitulo'>Filtro por precio</h4>
+                    <div className='containerMinMax'>
+                        <input className='inputMinMax' type='text'value={min} onChange={(e) => setMin(Number(e.target.value))}/>
+                        <input className='inputMinMax' type='text'value={max} onChange={(e) => setMax(Number(e.target.value))}/>
+                    </div>
                 </div>
             </div>
 
 
-            <h1>Lista de Productos</h1>
-            <div>
+            <h1 className='homePageTitulo'>Lista de Productos</h1>
+            <div className='containerProducHomePage'>
                 {
                     currentProducts.length > 0
                     ?

@@ -42,7 +42,7 @@ form {
     border: 2px solid var(--color-cuarto);
 }
 
-.formTextarea {
+.formInputMensaje {
     background-color: white;
     padding: 3px 8px 3px 8px;
     font-size: 1rem;
@@ -50,6 +50,7 @@ form {
     border: 0.5px solid var(--color-cuarto);
     color: var(--color-cuarto);
     font-weight: 500;
+    height: 6rem;
 }
 .formTextarea:hover {
     border: 2px solid var(--color-cuarto);

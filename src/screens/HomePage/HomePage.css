@@ -1,0 +1,68 @@
+.containerHomePage {
+    display: flex;
+    flex-direction: column;
+    
+}
+.containerFiltro {
+    padding: 1rem;
+    text-align: center;
+}
+.fitroTitulo {
+    font-size: 1.3rem;
+    color: var(--color-cuarto);
+    padding: 1rem 0rem;
+}
+.inputFiltro{
+    width: 80vw;
+
+    background-color: white;
+    padding: 3px 8px 3px 8px;
+    font-size: 1rem;
+    height: 1.8rem;
+    border-radius: 8px;
+    border: 0.5px solid var(--color-segundario);
+    color: var(--color-cuarto);
+    font-weight: 500;
+    
+}
+.containerMinMax {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.inputMinMax {
+    width: 35vw;
+    text-align: center;
+
+
+    background-color: white;
+    padding: 3px 8px 3px 8px;
+    font-size: 1rem;
+    height: 1.8rem;
+    border-radius: 8px;
+    border: 0.5px solid var(--color-segundario);
+    color: var(--color-cuarto);
+    font-weight: 500;
+}
+
+.homePageTitulo{
+    color: var(--color-cuarto);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.containerProducHomePage {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .containerProducHomePage {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 1440px) {
+    
+}

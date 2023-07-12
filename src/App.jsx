@@ -20,7 +20,6 @@ function App() {
         <nav>
         <NavLink to='/'><i className="bi bi-house-door-fill"></i></NavLink>
         <NavLink to='/contac'><i className="bi bi-envelope-fill"></i></NavLink>
-        <i className="bi bi-search"></i>
         <NavLink to='/cart'><i className="bi bi-cart3"></i></NavLink>
         </nav>
       </header>

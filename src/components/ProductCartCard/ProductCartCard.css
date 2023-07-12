@@ -1,0 +1,55 @@
+.containerProductoCarrrito {
+    display: flex;
+    width: 80vw;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.containerCarritoImg {
+    width: 70%;
+    align-self: center;
+}
+.carritoImg {
+    width: 100%;
+}
+.containerProductoDescripcion {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+}
+.carritoNombre {
+    font-size: 1rem;
+}
+.carritoCantidad {
+    font-size: 1rem;
+}
+.carritoPrecio {
+    font-size: 1rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .containerProductoCarrrito {
+        width: 100;
+    }
+    .containerProductoDescripcion {
+    align-self: center;
+    }
+    .carritoNombre {
+        font-size: 1.5rem;
+    }
+    .carritoCantidad {
+        font-size: 1.3rem;
+    }
+    .carritoPrecio {
+        font-size: 1.3rem;
+    }
+    
+}
+@media (min-width: 1440px) {
+    
+        
+}
