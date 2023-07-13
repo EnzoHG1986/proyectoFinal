@@ -16,9 +16,9 @@ const Counter = ({initialValue, stock, id}) => {
     return (
     <div className='containerCounter'>
         <div className='containerMenosMas'>
-            <button  className='btnMenosMas' onClick={() => setQuantity(quantity >1 ? quantity -1 : quantity)}><i class="bi-bag-dash-fill btnIco"></i></button>
+            <button className='btnMenosMas' onClick={() => setQuantity(quantity >1 ? quantity -1 : quantity)}><i className="bi-bag-dash-fill btnIco"></i></button>
             <span className='counterQuanity'>{quantity}</span>
-            <button className='btnMenosMas' onClick={() => setQuantity(quantity === stock ? quantity : quantity + 1)}><i class="bi-bag-plus-fill btnIco"></i></button>
+            <button className='btnMenosMas' onClick={() => setQuantity(quantity === stock ? quantity : quantity + 1)}><i className="bi-bag-plus-fill btnIco"></i></button>
         </div>
             <button className='btnConfirCompra' onClick={onClickAddProduct}>Confirmar</button>
     </div>

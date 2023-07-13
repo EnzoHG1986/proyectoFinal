@@ -7,16 +7,12 @@
     --color-terciario: #4D5E80;
     --color-cuarto: #4A55A2;
 }
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-/*     background-color: var(--color-principal); */
 }
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -39,9 +35,7 @@ nav {
 }
 .bi:hover{
     color: var(--color-cuarto);
-
 }
-
 
 @media (min-width: 768px) {
     header {
@@ -54,7 +48,6 @@ nav {
         display: block;
         height: 4rem;
     }
-    
 }
 @media (min-width: 1440px) {
     .bi {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useCustomContext } from '../../ContextManager/ContextProvider'
-import './ContatacPage.css'
+import './ContacPage.css'
 
 
 const ContacPage = () => {
@@ -24,15 +24,15 @@ const ContacPage = () => {
 
     <div className='containerForm'>
       <form onSubmit={handleRegisterUser}>
-        <h3 className='formTitulo'>Contact</h3>
-        <label className='formLabel' htmlFor='nombre'>Full name *</label>
+        <h3 className='formTitulo'>Contacto</h3>
+        <label className='formLabel' htmlFor='nombre'>Nombre Completo *</label>
         <input className='formInput' placeholder='Cosme Fulanito' name='nombre' id='nombre' onChange={handleChangeRegisterUser} value={formUserData.nombre} required/>
         <label className='formLabel' htmlFor='email'>Email *</label>
         <input className='formInput' type='email' placeholder='CosmeFulanito@email.com' name='email' id='email' onChange={handleChangeRegisterUser} value={formUserData.email} required/>
-        <label className='formLabel' htmlFor='message'>Message *</label>
+        <label className='formLabel' htmlFor='message'>Mensaje *</label>
         <input className='formInputMensaje' type='text' placeholder='Puedes enviar la devolucion por este medio.' name='textMail' id='textMail' onChange={handleChangeRegisterUser} value={formUserData.textMail} required/>
         <div className='fromContainerBtn'>
-          <button className='formBtn' type='submit'>Send</button>
+          <button className='formBtn' type='submit'>Enviar</button>
         </div>
       </form>
     </div>

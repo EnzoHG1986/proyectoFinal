@@ -1,7 +1,6 @@
 .containerHomePage {
     display: flex;
     flex-direction: column;
-    
 }
 .containerFiltro {
     padding: 1rem;
@@ -22,7 +21,6 @@
     border: 0.5px solid var(--color-segundario);
     color: var(--color-cuarto);
     font-weight: 500;
-    
 }
 .containerMinMax {
     display: flex;
@@ -41,13 +39,11 @@
     color: var(--color-cuarto);
     font-weight: 500;
 }
-
 .homePageTitulo{
     color: var(--color-cuarto);
     text-align: center;
     padding-bottom: 1.5rem;
 }
-
 .containerProducHomePage {
     display: flex;
     flex-direction: column;
@@ -71,10 +67,7 @@
     .inputFiltro{
         width: 90%;
     }
-
     .containerPrecio {
         width: 40vw;
     }
-
-
 }
