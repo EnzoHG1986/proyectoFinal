@@ -1,0 +1,42 @@
+.titulocarrito {
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    color: var(--color-cuarto);
+}
+.containerCarritoVacio {
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+    width: 70vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+    color: var(--color-cuarto);
+}
+.bi-cart4 {
+    font-size: 7rem;
+}
+.carritoVacio {
+
+}
+
+@media (min-width: 768px) {
+    .titulocarrito {   
+        font-size: 1.5rem;
+    }
+    .carritoVacio {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .containerCarritoVacio {
+        width: 50vw;
+    }
+    .carritoVacio {
+        font-size: 2.5rem;
+    }
+}

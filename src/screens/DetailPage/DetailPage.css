@@ -1,0 +1,82 @@
+.containerDetalPage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.containerImagenDetalPage {
+    width: 90vw;
+    margin:  0 auto;
+}
+.DetalPageImg {
+    width: 100%;
+}
+.DetalPagePrecio {
+    font-size: 1.5rem;
+}
+.containerDescripcionDetalPage {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.nombreDetalPage {
+    color: var(--color-cuarto);
+    font-size: 1.3rem;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+.descripcionDetalPage {
+    text-align: justify;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+
+
+@media (min-width: 768px) {
+    .containerImagenDetalPage {
+        width: 80vw;
+    }
+    .nombreDetalPage {
+        font-size: 1.8rem;
+    }
+    .descripcionDetalPage {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1440px) {
+    .containerGeneralDetalPage {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .containerDetalPage {
+        flex-direction: row;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .containerImagenDetalPage {
+        width: 30vw;
+        align-self: center;
+    }
+    .DetalPageImg {
+        width: 100%;
+    }
+    .DetalPagePrecio {
+        font-size: 2rem;
+    }
+    .containerDescripcionDetalPage {
+        width: 70vw;
+    }
+    .nombreDetalPage {
+        font-size: 2rem;
+        margin: 0;
+        width:100%;
+    }
+    .descripcionDetalPage {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}

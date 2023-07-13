@@ -5,6 +5,7 @@ import { CartPage, DetailPage, HomePage, ContacPage } from './screens';
 import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import logoFull from './assets/utn-Ba-full.png'
 import logoCel from './assets/utn-Ba-celu.png'
+import Footer from './components/Footer/Footer';
 
 
 
@@ -30,6 +31,8 @@ function App() {
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='/contac' element={<ContacPage/>}/>
       </Routes>
+    
+      <Footer/>
     </div>
   )
 }

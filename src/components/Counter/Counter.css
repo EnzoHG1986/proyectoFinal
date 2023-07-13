@@ -1,0 +1,44 @@
+.containerCounter {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.containerMenosMas {
+display: flex;
+gap: 0.7rem;
+}
+.btnMenosMas {
+    background-color: transparent;
+    border: none;
+}
+.btnIco {
+    font-size: 1.5rem;
+    color: var(--color-segundario);
+    cursor: pointer;
+}
+.btnIco:hover {
+    color: var(--color-cuarto);
+}
+.counterQuanity {
+    font-size: 2rem;
+}
+.btnConfirCompra {
+    width: 7.8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-cuarto);
+    border-radius: 8px;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+}
+@media (min-width: 1440px) {
+    .containerCounter {
+    justify-content: end;
+    width: 90vw;
+    margin: 0 auto;
+    }
+}

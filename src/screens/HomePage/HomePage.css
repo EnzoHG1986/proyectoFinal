@@ -14,7 +14,6 @@
 }
 .inputFiltro{
     width: 80vw;
-
     background-color: white;
     padding: 3px 8px 3px 8px;
     font-size: 1rem;
@@ -33,8 +32,6 @@
 .inputMinMax {
     width: 35vw;
     text-align: center;
-
-
     background-color: white;
     padding: 3px 8px 3px 8px;
     font-size: 1rem;
@@ -64,5 +61,20 @@
     }
 }
 @media (min-width: 1440px) {
-    
+    .containerFiltro {
+        display: flex;
+        justify-content: center;
+    }
+    .containerText {
+        width: 40vw;
+    }
+    .inputFiltro{
+        width: 90%;
+    }
+
+    .containerPrecio {
+        width: 40vw;
+    }
+
+
 }

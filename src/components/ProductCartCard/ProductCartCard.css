@@ -1,12 +1,13 @@
 .containerProductoCarrrito {
     display: flex;
-    width: 80vw;
+    width: 90vw;
     gap: 0.5rem;
     justify-content: center;
     padding-bottom: 1rem;
+    margin: 0 auto;
 }
 .containerCarritoImg {
-    width: 70%;
+    width: 20%;
     align-self: center;
 }
 .carritoImg {
@@ -28,12 +29,22 @@
 .carritoPrecio {
     font-size: 1rem;
 }
+.totalCartPage {
+    display: flex;
+    justify-content: end;
+    padding-top: 2rem;
+    width: 90vw;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 
 
 
 @media (min-width: 768px) {
     .containerProductoCarrrito {
-        width: 100;
+        width: 90vw;
+        gap: 1rem;
     }
     .containerProductoDescripcion {
     align-self: center;
@@ -50,6 +61,11 @@
     
 }
 @media (min-width: 1440px) {
-    
-        
+    .containerProductoCarrrito {
+        width: 80vw;
+        gap: 1.5rem;
+    }
+    .totalCartPage {
+        width: 80vw;
+    }
 }

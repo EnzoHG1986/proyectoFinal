@@ -18,10 +18,12 @@ const HomePage = () => {
     return (
         <div className='containerHomePage'>
             <div className='containerFiltro'>
-                <h4 className='fitroTitulo'>Filtra tu producto:</h4>
-                <input className='inputFiltro' placeholder='Busca tu producto'value={searchProduct} onChange={(e) => setSearchProduct(e.target.value)}/>
-                <div>
-                    <h4 className='fitroTitulo'>Filtro por precio</h4>
+                <div className='containerText'>
+                    <h4 className='fitroTitulo'>Filtra tu producto:</h4>
+                    <input className='inputFiltro' placeholder='Busca tu producto'value={searchProduct} onChange={(e) => setSearchProduct(e.target.value)}/>
+                </div>
+                <div className='containerPrecio'>
+                    <h4 className='fitroTitulo'>Filtro por precio:</h4>
                     <div className='containerMinMax'>
                         <input className='inputMinMax' type='text'value={min} onChange={(e) => setMin(Number(e.target.value))}/>
                         <input className='inputMinMax' type='text'value={max} onChange={(e) => setMax(Number(e.target.value))}/>
