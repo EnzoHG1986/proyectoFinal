@@ -21,6 +21,10 @@
     border: 0.5px solid var(--color-segundario);
     color: var(--color-cuarto);
     font-weight: 500;
+    cursor: pointer;
+}
+.inputFiltro:hover {
+    border: 0.5px solid var(--color-cuarto);
 }
 .containerMinMax {
     display: flex;
@@ -38,6 +42,10 @@
     border: 0.5px solid var(--color-segundario);
     color: var(--color-cuarto);
     font-weight: 500;
+    cursor: pointer;
+}
+.inputMinMax:hover {
+    border: 0.5px solid var(--color-cuarto);
 }
 .homePageTitulo{
     color: var(--color-cuarto);

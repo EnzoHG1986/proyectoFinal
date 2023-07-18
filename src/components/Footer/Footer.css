@@ -1,9 +1,9 @@
 footer {
-    padding: 3rem 0;
     display: flex;
     flex-direction: column;
     color: var(--color-terciario);
     font-weight: 600;
+    padding: 1rem 0;
 }
 .containerFooterLogo {
     display: flex;
@@ -25,6 +25,15 @@ footer {
     justify-content: space-around;
     padding: 1.5rem 0;
 }
+.navFooter {
+    color: var(--color-terciario);
+    font-size: 1.2rem;
+}
+.navFooter:hover {
+    color: var(--color-cuarto);
+    text-decoration: underline;
+}
+
 .containerFooterPolicy {
     text-align: center;
     display: flex;
@@ -42,9 +51,12 @@ footer {
 @media (min-width: 768px) {
     footer {
         flex-direction: row;
-        width: 90vw;
+        width: 80vw;
         justify-content: space-between;
-        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        margin: 0 10vw;
+        
     }
     .containerFooterLogo{
         flex-direction: column;
@@ -55,10 +67,7 @@ footer {
     .containerFooterLink {
         flex-direction: column;
     }
-}
-@media (min-width: 1440px) {
-    footer {
-        width: 70vw;
-        
+    .navFooter {
+        font-size: 1.4rem;
     }
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useCustomContext } from '../../ContextManager/ContextProvider'
 import './ContacPage.css'
 
-
 const ContacPage = () => {
 
   const [formUserData, setFormUserData] = useState({
@@ -30,7 +29,7 @@ const ContacPage = () => {
         <label className='formLabel' htmlFor='email'>Email *</label>
         <input className='formInput' type='email' placeholder='CosmeFulanito@email.com' name='email' id='email' onChange={handleChangeRegisterUser} value={formUserData.email} required/>
         <label className='formLabel' htmlFor='message'>Mensaje *</label>
-        <input className='formInputMensaje' type='text' placeholder='Puedes enviar la devolucion por este medio.' name='textMail' id='textMail' onChange={handleChangeRegisterUser} value={formUserData.textMail} required/>
+        <textarea className='formInputMensaje' type='text' placeholder='Puedes enviar tu Mensaje' name='textMail' id='textMail' onChange={handleChangeRegisterUser} value={formUserData.textMail} required/>
         <div className='fromContainerBtn'>
           <button className='formBtn' type='submit'>Enviar</button>
         </div>

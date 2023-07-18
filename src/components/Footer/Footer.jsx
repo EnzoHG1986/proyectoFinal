@@ -18,9 +18,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className='containerFooterLink'>
-                <NavLink to='/'>Home</NavLink>
-                <NavLink to='/contac'>Contacto</NavLink>
-                <NavLink to='/cart'>Carrito</NavLink>
+                <NavLink className="navFooter" to='/'>Home</NavLink>
+                <NavLink className="navFooter" to='/contac'>Contacto</NavLink>
+                <NavLink className="navFooter" to='/cart'>Carrito</NavLink>
             </div>
             <div className='containerFooterPolicy'>
                 <div>

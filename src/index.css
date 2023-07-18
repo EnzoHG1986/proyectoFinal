@@ -2,16 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
+    --color-principal: #DDE6ED;
+    --color-segundario: #9DB2BF;
+    --color-terciario: #526D82;
+    --color-cuarto: #27374D;
+/*     
     --color-principal: #F7F8FA;
     --color-segundario: #c3cad9;
     --color-terciario: #4D5E80;
     --color-cuarto: #4A55A2;
+ */
 }
+
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+}
+body {
+    min-height: 100vh;
+    position: relative;
 }
 header {
     display: flex;
@@ -32,12 +48,18 @@ nav {
 .bi {
     color: var(--color-segundario);
     font-size: 2rem;
+    transition: 500ms;
+
 }
 .bi:hover{
     color: var(--color-cuarto);
 }
 
 @media (min-width: 768px) {
+    body {
+    padding-bottom: 200px;
+    min-height: 77vh;
+    }
     header {
         padding: 2.5rem;
     }

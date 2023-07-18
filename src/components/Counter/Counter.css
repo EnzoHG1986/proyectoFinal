@@ -11,11 +11,11 @@ gap: 0.7rem;
 .btnMenosMas {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .btnIco {
     font-size: 1.5rem;
     color: var(--color-segundario);
-    cursor: pointer;
 }
 .btnIco:hover {
     color: var(--color-cuarto);
