@@ -16,8 +16,34 @@
     margin: 0 auto;
     color: var(--color-cuarto);
 }
+.totalCartPage {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    gap: 2rem;
+}
+.textTotal {
+    align-self: flex-end;
+    font-size: 1.2rem;
+}
 .bi-cart4 {
     font-size: 7rem;
+}
+.btnPagarCompra {
+    width: 7.8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-segundario);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 500ms;
+    align-self: flex-end;
+}
+.btnPagarCompra:hover {
+    background-color: var(--color-cuarto);
 }
 
 @media (min-width: 768px) {

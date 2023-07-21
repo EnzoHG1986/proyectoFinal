@@ -16,6 +16,8 @@ gap: 0.7rem;
 .btnIco {
     font-size: 1.5rem;
     color: var(--color-segundario);
+    transition: 500ms;
+
 }
 .btnIco:hover {
     color: var(--color-cuarto);
@@ -29,11 +31,15 @@ gap: 0.7rem;
     font-size: 1rem;
     font-weight: 500;
     color: white;
-    background-color: var(--color-cuarto);
+    background-color: var(--color-segundario);
     border-radius: 8px;
     border: none;
     align-self: center;
     cursor: pointer;
+    transition: 500ms;
+}
+.btnConfirCompra:hover {
+    background-color: var(--color-cuarto);
 }
 @media (min-width: 1440px) {
     .containerCounter {

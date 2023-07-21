@@ -5,6 +5,13 @@ import './CartPage.css'
 
 const CartPage = () => {
     const {cart, getTotal} = useCustomContext()
+    const onclickPagar = () =>{
+      Swal.fire({
+        icon: 'success',
+        title: 'Confirmado',
+        text: 'Tu pago se realizo con exito',
+      })
+    }
   return (
     <div>
         {cart.length > 0
@@ -18,7 +25,8 @@ const CartPage = () => {
             ))}
         </div>
         <div className='totalCartPage'>
-          Total: ${getTotal()}
+          <p className='textTotal'>Total: ${getTotal()}</p>
+          <button className='btnPagarCompra' onClick={onclickPagar}>Pagar</button>
         </div>
       </>
       :

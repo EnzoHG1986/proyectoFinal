@@ -19,6 +19,9 @@ const ContacPage = () => {
     console.log(formUserData)
     setFormUserData({...formUserData, [evento.target.name]: evento.target.value})
   }
+
+
+  
   return (
 
     <div className='containerForm'>

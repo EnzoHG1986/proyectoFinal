@@ -6,12 +6,6 @@
     --color-segundario: #9DB2BF;
     --color-terciario: #526D82;
     --color-cuarto: #27374D;
-/*     
-    --color-principal: #F7F8FA;
-    --color-segundario: #c3cad9;
-    --color-terciario: #4D5E80;
-    --color-cuarto: #4A55A2;
- */
 }
 
 
@@ -28,6 +22,8 @@
 body {
     min-height: 100vh;
     position: relative;
+    padding-bottom: 350px;
+
 }
 header {
     display: flex;
@@ -57,8 +53,7 @@ nav {
 
 @media (min-width: 768px) {
     body {
-    padding-bottom: 200px;
-    min-height: 77vh;
+    padding-bottom: 300px;
     }
     header {
         padding: 2.5rem;
@@ -72,6 +67,9 @@ nav {
     }
 }
 @media (min-width: 1440px) {
+    body {
+        padding-bottom: 350px;
+        }
     .bi {
         font-size: 3rem;
     }

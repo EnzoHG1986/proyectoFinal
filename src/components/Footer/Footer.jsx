@@ -17,6 +17,12 @@ const Footer = () => {
                     <p className='footerDireccion'>Buenos Aires, Argentina</p>
                 </div>
             </div>
+            <div className='containerFooterRedes'>
+                <NavLink className="footerIco" to='https://web.whatsapp.com/'><i className="bi bi-whatsapp icoRedes"></i></NavLink>
+                <NavLink className="footerIco" to='https://www.facebook.com/'><i className="bi bi-facebook icoRedes"></i></NavLink>
+                <NavLink className="footerIco" to='https://www.instagram.com/'><i className="bi bi-instagram icoRedes"></i></NavLink>
+                <NavLink className="footerIco" to='https://twitter.com/'><i className="bi bi-twitter icoRedes"></i></NavLink>
+            </div>
             <div className='containerFooterLink'>
                 <NavLink className="navFooter" to='/'>Home</NavLink>
                 <NavLink className="navFooter" to='/contac'>Contacto</NavLink>

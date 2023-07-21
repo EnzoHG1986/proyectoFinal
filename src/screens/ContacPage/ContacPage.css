@@ -47,7 +47,7 @@ form {
     justify-content: flex-end;
     padding-top: 1.25rem;
 }
-.formBtn {
+/* .formBtn {
     width: 7.8rem;
     height: 2.5rem;
     font-size: 1rem;
@@ -56,6 +56,24 @@ form {
     background-color: var(--color-cuarto);
     border-radius: 8px;
     border: none;
+}
+ */
+
+.formBtn {
+    width: 7.8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-segundario);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 500ms;
+    align-self: flex-end;
+}
+.formBtn:hover {
+    background-color: var(--color-cuarto);
 }
 
 @media (min-width: 768px) {
