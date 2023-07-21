@@ -31,6 +31,10 @@ const ContacPage = () => {
         <input className='formInput' placeholder='Cosme Fulanito' name='nombre' id='nombre' onChange={handleChangeRegisterUser} value={formUserData.nombre} required/>
         <label className='formLabel' htmlFor='email'>Email *</label>
         <input className='formInput' type='email' placeholder='CosmeFulanito@email.com' name='email' id='email' onChange={handleChangeRegisterUser} value={formUserData.email} required/>
+
+        <label className='formLabel' htmlFor='nombre'>Asunto</label>
+        <input className='formInput' placeholder='Motivo del Mail' name='asunto' id='asunto'required/>
+
         <label className='formLabel' htmlFor='message'>Mensaje *</label>
         <textarea className='formInputMensaje' type='text' placeholder='Puedes enviar tu Mensaje' name='textMail' id='textMail' onChange={handleChangeRegisterUser} value={formUserData.textMail} required/>
         <div className='fromContainerBtn'>
